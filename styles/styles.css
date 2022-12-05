@@ -61,8 +61,8 @@
 
 @font-face {
     font-family: "icons";
-    src: url("static/fonts/fontcustom_fbdd11058730423f2b61c9a9fc7eb07c.eot}");
-    src: url("static/fonts/fontcustom_fbdd11058730423f2b61c9a9fc7eb07c.eot?#iefix") format("embedded-opentype"), url("static/fonts/fontcustom_fbdd11058730423f2b61c9a9fc7eb07c.woff") format("woff"), url("static/fonts/fontcustom_fbdd11058730423f2b61c9a9fc7eb07c.ttf") format("truetype"), url("static/fonts/fontcustom_fbdd11058730423f2b61c9a9fc7eb07c.svg#icons") format("svg");
+    src: url("/static/fonts/fontcustom_fbdd11058730423f2b61c9a9fc7eb07c.eot}");
+    src: url("/static/fonts/fontcustom_fbdd11058730423f2b61c9a9fc7eb07c.eot?#iefix") format("embedded-opentype"), url("/static/fonts/fontcustom_fbdd11058730423f2b61c9a9fc7eb07c.woff") format("woff"), url("/static/fonts/fontcustom_fbdd11058730423f2b61c9a9fc7eb07c.ttf") format("truetype"), url("/static/fonts/fontcustom_fbdd11058730423f2b61c9a9fc7eb07c.svg#icons") format("svg");
     font-weight: normal;
     font-style: normal
 }
