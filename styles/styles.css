@@ -21,7 +21,6 @@
     --highlight-text-color: #f39200;
     /* fonts */
     --body-font-family: 'futura', Arial Narrow, Helvetica, arial, sans-serif;
-    ;
     --heading-font-family: var(--body-font-family);
     --fixed-font-family: 'Roboto Mono', menlo, consolas, 'Liberation Mono', monospace;
     /* body sizes */
@@ -57,6 +56,14 @@
     font-family: 'futura';
     src: url("/static/fonts/DysonFutura-Heavy.woff2") format("woff2"), url("/static/fonts/DysonFutura-Heavy.woff") format("woff");
     font-weight: 800;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "icons";
+    src: url("static/fonts/fontcustom_fbdd11058730423f2b61c9a9fc7eb07c.eot}");
+    src: url("static/fonts/fontcustom_fbdd11058730423f2b61c9a9fc7eb07c.eot?#iefix") format("embedded-opentype"), url("static/fonts/fontcustom_fbdd11058730423f2b61c9a9fc7eb07c.woff") format("woff"), url("static/fonts/fontcustom_fbdd11058730423f2b61c9a9fc7eb07c.ttf") format("truetype"), url("static/fonts/fontcustom_fbdd11058730423f2b61c9a9fc7eb07c.svg#icons") format("svg");
+    font-weight: normal;
     font-style: normal
 }
 
@@ -101,7 +108,8 @@ h2 {
 }
 
 h3 {
-    font-size: var(--heading-font-size-l)
+    font-size: var(--heading-font-size-l);
+    font-weight: 400;
 }
 
 h4 {
@@ -270,7 +278,7 @@ main img {
      :root {
         --heading-font-size-xxl: 60px;
         --heading-font-size-xl: 48px;
-        --heading-font-size-l: 36px;
+        --heading-font-size-l: 40px;
         --heading-font-size-m: 30px;
         --heading-font-size-s: 24px;
         --heading-font-size-xs: 22px;
@@ -293,7 +301,19 @@ main .section.highlight {
     background-color: var(--highlight-background-color);
 }
 
-.center {
+.bg-lightblue {
+    background-color: #40b4da;
+}
+
+.centre {
     text-align: center;
-    padding: 70px 0
+    padding: 70px 70px;
+}
+
+.light-grey {
+    background-color: #ededed;
+}
+
+.text-white {
+    color: #fff;
 }
