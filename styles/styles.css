@@ -35,7 +35,10 @@
     --heading-font-size-s: 20px;
     --heading-font-size-xs: 18px;
     /* nav height */
-    --nav-height: 64px;
+    --nav-height: 87px;
+    /* breakpoints */
+    --bp-tablet: 1200px;
+    --bp-mobile: 1024px;
 }
 
 @font-face {
@@ -223,10 +226,6 @@ main input:hover {
     border: 1px solid var(--text-color);
 }
 
-main .section {
-    padding: 64px 16px;
-}
-
 main pre {
     background-color: var(--overlay-background-color);
     padding: 1em;
@@ -267,14 +266,14 @@ main img {
 
 @media (min-width: 600px) {
     main .section {
-        padding: 64px 32px;
+        padding: 64px 0;
     }
     main .section:nth-child(1) {
-        padding: 0 32px;
+        padding: 0 0;
     }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1200px) {
      :root {
         --heading-font-size-xxl: 60px;
         --heading-font-size-xl: 48px;
@@ -283,12 +282,12 @@ main img {
         --heading-font-size-s: 24px;
         --heading-font-size-xs: 22px;
     }
-    .section>div {
-        max-width: 1200px;
+
+    main {
+        max-width: 1440px;
         margin: auto;
     }
 }
-
 
 /* progressive section appearance */
 
