@@ -4,11 +4,40 @@ footer {
   font-size: var(--body-font-size-s);
 }
 
-footer .footer {
-  max-width: 1200px;
+footer div.footer {
+  max-width: 1440px;
   margin: auto;
+  width: calc(10 * 100%/12);
 }
 
 footer .footer p {
   margin: 0;
 }
+
+footer .footer>div {
+  display: grid;
+  gap: 32px;
+  grid-template-columns: 1fr 1fr;
+}
+
+footer .footer>div div:nth-child(-n+2) {
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--text-color);
+}
+
+
+footer .footer div>div:nth-child(3) {
+  width: 50%;
+  text-align: left;
+}
+
+footer .footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+ footer .footer ul li {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+ }
