@@ -1,0 +1,46 @@
+main .toolbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 16px;
+}
+
+main .toolbar>div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+main .toolbar picture img {
+    height: 60px;
+    width: 60px;
+    min-width: auto;
+}
+
+main .toolbar div .button-container a {
+    background-color: inherit;
+    color: inherit
+}
+
+
+@media screen and (max-width: 1024px) {
+    main .toolbar {
+
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    main .toolbar>div {
+        flex: 1 1 50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    main .toolbar {
+        padding-left: 60px;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: nowrap;
+    }
+}
