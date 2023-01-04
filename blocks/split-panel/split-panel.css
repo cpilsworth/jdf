@@ -1,0 +1,27 @@
+.split-panel>div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.split-panel div>div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 calc(100%/12) 0 calc(100%/12);
+    text-align: left;
+}
+
+.split-panel>div:nth-child(2) {
+    display: block;
+}
+
+.split-panel .button-container {
+    margin: 0 0;
+}
+
+@media only screen and (max-width: var(--bp-mobile)) {
+    main .split-panel>div {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
